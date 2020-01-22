@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}RibéGroupe > Annuaire{% endblock %}
+
+{% block body %}
+    <table class="striped">
+        <thead>
+        <tr>
+            <th>Société</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Service</th>
+            <th>Poste</th>
+            <th>Email</th>
+            <th>Ligne Direct</th>
+            <th>Ligne Mobile</th>
+            <th>Ligne Interne</th>
+            <th>Est Visible</th>
+            <th><a class="waves-effect waves-light btn" href="{{ path('new_staff') }}"><i class="material-icons right">person_add</i>Nouvel Utilisateur</a>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for staff in staff %}
+            <tr>
+                <td>{{ staff.company.name }}</td>
+                <td>{{ staff.lastname }}</td>
+                <td>{{ staff.firstname }}</td>
+                <td>{{ staff.service.name }}</td>
+                <td>{{ staff.post }}</td>
+                <td>{{ staff.email }}</td>
+                <td>{{ staff.directline }}</td>
+                <td>{{ staff.mobileline }}</td>
+                <td>{{ staff.internalline }}</td>
+                <td>{{ staff.isvisible }}</td>
+                <td><a class="waves-effect waves-light btn blue" href="{{ path('annuaire', { 'id': staff.id}) }}"><i class="material-icons right">edit</i>MODIFIER</a></td>
+                <td><a class="waves-effect waves-light btn red" href="{{ path('annuaire', { 'id': staff.id}) }}"><i class="material-icons right">delete</i>SUPPRIMER</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

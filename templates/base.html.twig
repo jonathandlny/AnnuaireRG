@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('materialize/css/materialize.css') }}">
+    <link href="{{ asset('materialize/icone/icone.css') }}" rel="stylesheet">
+    {% block stylesheets %}{% endblock %}
+
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper" style="background-color: #6C8E15;">
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="{{ path('annuaire') }}"><img style="margin-top: 0px;" src="{{ asset('img/logo.png') }}"/></a></li>
+            <li><h5>RibéGroupe - Annuaire</h5></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{{ path('annuaire') }}">Utilisateurs</a></li>
+            <li><a class="waves-effect waves-light btn red" href="{{ path('app_logout') }}" alt="Se Déconnecter"><i class="material-icons right">settings_power</i>Se Déconnecter</a></li>
+        </ul>
+    </div>
+</nav>
+
+{% block body %}{% endblock %}
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="{{ asset('materialize/js/materialize.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
 </html>

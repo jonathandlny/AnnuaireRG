@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c8911e7-d125-4a7a-839b-f06a48291f58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AnnuaireRG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AnnuaireRG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/icone/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/icone/icone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/staff.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/staff/newStaff.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AnnuaireController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnnuaireController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200120180410.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +147,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1WWdDSlnszhktfHJDc9WGzIqqKt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -144,7 +159,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adblangue" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j.delannoy\Desktop\Project\Symfony Project\AnnuaireRG\public" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,7 +191,7 @@
       <workItem from="1579269165833" duration="914000" />
       <workItem from="1579270097714" duration="962000" />
       <workItem from="1579542793257" duration="1080000" />
-      <workItem from="1579704895009" duration="222000" />
+      <workItem from="1579704895009" duration="7334000" />
     </task>
     <servers />
   </component>
